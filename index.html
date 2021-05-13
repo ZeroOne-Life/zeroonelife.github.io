@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/index.js"></script>
+</script>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jq.js"></script>
+<body>
+<div id="top">
+  <div id="top_1"></div>
+  <div id="logo"></div>
+  <div id="date"></div>
+<div id="cd">
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><a href="files/tp.html">图片</a>
+            <ul>
+            <li><a href="files/tp.html#1">热血</a></li>
+                <li><a href="files/tp.html#2">唯美</a></li>
+                <li><a href="files/tp.html#3">自然</a></li>
+            </ul></li>
+        <li onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><a href="files/sj.html">书籍</a>
+            <ul>
+              <li><a href="files/sj.html#1">小说</a></li>
+                <li><a href="files/sj.html#2">学习</a></li>
+                <li><a href="files/sj.html#3">书籍</a></li>
+            </ul></li>
+        <li onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><a href="files/yy.html">音乐</a>
+            <ul>
+              <li><a href="files/yy.html#1">力量</a></li>
+                <li><a href="files/yy.html#2">放松</a></li>
+                <li><a href="files/yy.html#3">压抑</a></li>
+            </ul></li>
+        <li onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><a href="files/sp.html">视频</a>
+             <ul>
+               <li><a href="files/sp.html#1">动漫</a></li>
+                <li><a href="files/sp.html#2">电影</a></li>
+                <li><a href="files/sp.html#3">破站</a></li>
+            </ul></li>
+        <li onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)"><a href="files/yh.html">用户</a>
+             <ul>
+               <li><a href="files/yh.html#1">注册</a></li>
+                <li><a href="files/yh.html#1">评论</a></li>
+            </ul></li>
+      </ul>
+   </div>
+</div>
+<div id="adverl"><img src="images/gd/9529fec17cc190198a3a360b88324d6d.jpg" width="200" height="110" />大家好，我是渣渣辉！</div>
+<div id="adverr"><img src="images/gd/3f76f4f4433c04caf9de0c2ce61039d6.jpg" width="200" height="111" />这是你没玩过的船新版本！</div>
+<div id="main">
+	
+  <div id="lunbo">
+    <ul class="pic">
+      <li><img src="images/tp/moshou/1.jpg" width="960" height="600" /></li>
+ 	  <li><img src="images/sj/1b522c8ae809182e069996869d341d78.jpeg" width="960" height="600" /></li>
+      <li><img src="images/yy/c169363f55d14f879efc6bed304b324f.jpeg" width="960" height="600" /></li>
+      <li><img src="images/sp/1561949355765.jpg" width="960" height="600" /></li>
+      <li><img src="images/sp/006z51zdgy1g8s0p9kl7nj335s23w1ky (1).jpg" width="960" height="600" /></li>
+      <li><img src="images/bj/e84cdcf717b894fdde19d63b61990a57.jpg" width="960" height="600" /></li>
+    </ul>
+  </div>
+  <dl>
+    <dt>注册</dt>
+    <dd> 
+<table class = "main" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td class = "hr_1">新用户注册</td>
+    </tr>
+    <tr>
+    	<td style="height:10px;"></td>
+    </tr>
+      
+    <form action="" method="post" name="myform">
+   		<tr>
+        	<td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+            	<td class="left">用户名：</td>
+                <td class="center"><input id="user" type="text" class="inputClass" onblur="checkUser()"/></td>
+                <td><div id="user_prompt">用户名是由英文字母和数字组成的4~16位字符，以字母开头</div></td>
+            </tr>
+            <tr>
+            	<td class="left">密码：</td>
+                <td class="center"><input id="pwd" type="password" class="inputClass" onblur="checkPwd()"/></td>
+                <td><div id="pwd_prompt">密码由4-10位字符组成</div></td>
+            </tr>	
+            <tr>
+            	<td class="left">确认密码：</td>
+                <td class="center"><input id="repwd" type="password" class="inputClass" onblur="checkRepwd()"/></td>
+                <td><div id="repwd_prompt"></div></td>
+            </tr>
+            <tr>
+            	<td class="left">手机号码：</td>
+                <td class="center"><input id="mobile" type="text" class="inputClass" onblur="checkMobile()"/></td>
+                <td><div id="mobile_prompt"></div></td>
+            </tr>
+            <tr>
+            	<td class="left">电子邮箱：</td>
+                <td class="center"><input id="email" type="text" class="inputClass" onblur="checkEmail()"/></td>
+                <td><div id="email_prompt">邮箱格式示例：web@126.com</div></td>
+            </tr>           
+            <tr>
+            	<td class="left">邮政编码：</td>
+                <td class="center"><input id="postal" type="text" class="inputClass" onblur="checkPostal()"/></td>
+                <td><div id="postal_prompt"></div></td>
+            </tr>
+            <tr>
+            	<td class="left">&nbsp;</td>
+                <td class="center"><input name="" type="image" class="inputClass"  src="images/bj/e84cdcf717b894fdde19d63b61990a57.jpg"/></td>
+                <td>&nbsp;</td>
+            </tr>
+            </table>
+            </td>
+        </tr>
+     </form>
+   
+ </table>
+ </dd>
+ </dl>
+  	<p>关于我的博客</p>
+    <dl>
+    	<dt>我是谁？</dt>
+        <dd>我是渣渣辉</dd>
+        <dt>我喜欢玩什么游戏？</dt>
+        <dd>贪玩蓝月</dd>
+        <dt>什么版本？</dt>
+        <dd>你没玩过的船新版本</dd>
+        <dt>什么时候玩？</dt>
+        <dd>今晚八点，准时开车</dd>
+        <dt>我们的口号是？</dt>
+        <dd>是兄弟就来，干我</dd>
+    </dl>
+<div class="showbig clearfix">
+  <div id="list">
+    <h1>图片专区——精选</h1>
+    <table width="960" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><a href="images/tp/moshou/9.jpg" ><img src="images/tp/moshou/9.jpg" width="480" height="300" /></td>
+        <td><a href="images/tp/moshou/7.jpg" ><img src="images/tp/moshou/7.jpg" width="480" height="300" /></td>
+      </tr>
+      <tr>
+        <td><a href="images/tp/moshou/8.jpg" ><img src="images/tp/moshou/8.jpg" width="480" height="300" /></td>
+        <td><a href="images/tp/moshou/18.jpg" ><img src="images/tp/moshou/18.jpg" width="480" height="300" /></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><h2><a href="files/tp.html">魔兽</a></h2></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div class="showbig clearfix">
+  <div id="list">
+    <h1>书籍专区——精选</h1>
+    <table width="960" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><a href="images/sj/longzu/b8014a90f603738d827be2cfb31bb051f819ec2e.jpg" title="龙族Ⅰ：火之晨曦"><img src="images/sj/longzu/b8014a90f603738d827be2cfb31bb051f819ec2e.jpg" width="137" height="188" /></td>
+    <td><a href="images/sj/longzu/e7cd7b899e510fb308ab9d7ad933c895d0430ca8.jpg" title="龙族Ⅱ：悼亡者之瞳"><img src="images/sj/longzu/e7cd7b899e510fb308ab9d7ad933c895d0430ca8.jpg" width="137" height="188" /></td>
+    <td><a href="images/sj/longzu/ac4bd11373f082022176d7024afbfbedab641b22.jpg" title="龙族Ⅲ：黑月之潮（上）"><img src="images/sj/longzu/ac4bd11373f082022176d7024afbfbedab641b22.jpg" width="137" height="188" /></td>
+    <td><a href="images/sj/longzu/37d12f2eb9389b50121ef5f68235e5dde6116eb4.jpg" title="龙族Ⅲ：黑月之潮（中）"><img src="images/sj/longzu/37d12f2eb9389b50121ef5f68235e5dde6116eb4.jpg" width="137" height="188" /></td>
+    <td><a href="images/sj/longzu/377adab44aed2e73639f92888001a18b87d6fa24.jpg" title="龙族Ⅲ：黑月之潮（下）"><img src="images/sj/longzu/377adab44aed2e73639f92888001a18b87d6fa24.jpg" width="137" height="188" /></td>
+    <td><a href="images/sj/longzu/cf1b9d16fdfaaf519e46a81b8b5494eef11f7ae8.jpg" title="龙族Ⅳ：奥丁之渊"><img src="images/sj/longzu/cf1b9d16fdfaaf519e46a81b8b5494eef11f7ae8.jpg" width="137" height="188" /></td>    
+    <td><a href="images/sj/longzu/a50f4bfbfbedab646b6bf861fb36afc379311e71.jpg" title="龙族Ⅴ：悼亡者的归来"><img src="images/sj/longzu/a50f4bfbfbedab646b6bf861fb36afc379311e71.jpg" width="137" height="188" /></td>
+  </tr>
+  <tr>
+    <td colspan="7" align="center"><h2><a href="files/sj.html">龙族全集</a></h2></td>
+    </tr>
+</table>
+
+  </div>
+  </div>
+
+  <div id="list">
+    <h1>音乐专区——精选</h1>
+  <a href="files/yy.html"><img src="images/yy/c169363f55d14f879efc6bed304b324f.jpeg" width="960" height="600" /></a> </div>
+
+>
+<div id="list">
+  <h1>视频专区——精选</h1>
+  <a href="files/sp.html"><img src="images/sp/1561949355765.jpg" width="960" height="600" /></a> </div>
+  </a>
+<div id="bottom">
+  <table width="960" align="center">
+    <tr>
+      <td colspan="2" align="center">欢迎您的到来！</td>
+    </tr>
+    <tr>
+      <td width="473" align="center">邮箱：1013882108@qq.com</td>
+      <td width="475" align="center">QQ:1013882108</td>
+    </tr>
+  </table>
+<div class="copyright">
+<span>版权所有@软件四班-0201180403-陈骏华</span>
+</div>
+</div>
+  
+</body>
+</html>
